@@ -1,0 +1,19 @@
+{
+  "name": "sc2-sounds",
+  "owner": {
+    "name": "seedy-fiern"
+  },
+  "metadata": {
+    "description": "StarCraft II sound effects for Claude Code — play Terran, Protoss, or Zerg sounds on session start, permission requests, and task completion",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "sc2-sounds",
+      "description": "SC2 sound effects that play on Claude Code events. Supports Terran, Protoss, and Zerg race themes.",
+      "source": "./.claude-plugin",
+      "strict": false,
+      "skills": ["./skills/race"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "sc2-sounds",
+  "version": "1.0.0",
+  "description": "StarCraft II sound effects for Claude Code events",
+  "author": {
+    "name": "seedy"
+  },
+  "repository": "https://github.com/seedy-fiern/claude-sc2-sounds",
+  "license": "MIT",
+  "hooks": "./hooks/hooks.json",
+  "skills": ["./skills/race"]
+}
