@@ -1,7 +1,7 @@
 {
   "name": "sc2-sounds",
   "owner": {
-    "name": "seedy-fiern"
+    "name": "seeedy"
   },
   "metadata": {
     "description": "StarCraft II sound effects for Claude Code — play Terran, Protoss, or Zerg sounds on session start, permission requests, and task completion",
