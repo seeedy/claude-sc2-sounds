@@ -12,9 +12,9 @@ claude plugin add seeedy/claude-sc2-sounds
 
 | Event | Hook | Example sounds |
 |-------|------|---------------|
-| Session start | `SessionStart` | "Commlink online", "All crews reporting" |
-| Permission prompt | `PermissionRequest` | "Orders, captain?", "Set the course" |
-| Task complete | `Stop` | "Job's finished", "Upgrade complete" |
+| Session start | `SessionStart` | "Battlecruiser operational", "Good day, commander" |
+| Permission prompt | `PermissionRequest` | "Anytime you're ready", "I'm waiting on you" |
+| Task complete | `Stop` | "Research complete", "Upgrade complete" |
 
 ## Change race
 
