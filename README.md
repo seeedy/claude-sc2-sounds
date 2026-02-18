@@ -1,6 +1,6 @@
 # SC2 Sounds for Claude Code
 
-StarCraft II sound effects that play on Claude Code events. Hear Terran (or Protoss/Zerg) voice lines when your session starts, a permission prompt appears, or a task completes.
+StarCraft II sound effects that play on Claude Code events. Hear Terran or Protoss voice lines when your session starts, a permission prompt appears, or a task completes.
 
 ## Install
 
