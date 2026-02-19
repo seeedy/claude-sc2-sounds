@@ -27,9 +27,21 @@ Use the slash command inside Claude Code:
 
 Pick Terran, Protoss, or Zerg. Your choice is saved to `~/.claude/sc2-race` and takes effect immediately.
 
-Switching race also updates your Claude Code **spinner verbs** to match the selected race (e.g. "Stimming marines" for Terran, "Constructing additional pylons" for Protoss, "Spawning more overlords" for Zerg).
+Switching race also updates your Claude Code **spinner verbs** — see below.
 
 The default race is **Terran**.
+
+## Spinner Verbs
+
+When you pick a race, the plugin replaces Claude Code's default spinner verbs (the text shown while Claude is thinking) with race-themed lines. Each race has 18 unique verbs:
+
+| Race | Example verbs |
+|------|--------------|
+| Terran | Stimming marines, Calling down MULEs, Sieging tanks, Charging Yamato cannon |
+| Protoss | Constructing additional pylons, Warping in zealots, Blinking stalkers, Storming bio ball |
+| Zerg | Spawning more overlords, Injecting larvae, Morphing banelings, Nydus worming behind base |
+
+The verbs are written to `spinnerVerbs` in `~/.claude/settings.json` and take effect immediately — no restart needed.
 
 ## Add your own sounds
 

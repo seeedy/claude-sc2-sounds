@@ -11,7 +11,7 @@ When the user invokes this skill, present a race selection using AskUserQuestion
 - **Protoss** — Probe and nexus sounds
 - **Zerg** — Drone and hatchery sounds
 
-After the user picks a race:
+After the user picks a race, you MUST complete BOTH steps below. Do NOT skip step 2.
 
 ## 1. Save the race preference
 
@@ -21,9 +21,9 @@ Write their choice (lowercase: `terran`, `protoss`, or `zerg`) to `~/.claude/sc2
 echo "<race>" > ~/.claude/sc2-race
 ```
 
-## 2. Update spinner verbs
+## 2. Update spinner verbs (REQUIRED — do not skip)
 
-Read `~/.claude/settings.json`, replace the `spinnerVerbs` key with the matching race verbs below, and write the file back. Preserve all other settings exactly as they are.
+Use the Read tool to read `~/.claude/settings.json`. Then use the Edit tool to replace the existing `"spinnerVerbs"` value with the matching race's JSON object below. If no `spinnerVerbs` key exists yet, add it as a top-level key. Preserve all other settings exactly as they are.
 
 ### Terran spinner verbs
 
@@ -109,6 +109,8 @@ Read `~/.claude/settings.json`, replace the `spinnerVerbs` key with the matching
 }
 ```
 
-## 3. Confirm
+## 3. Verify and confirm
 
-Tell the user their race and spinner verbs have been updated. The new sounds take effect on the next Claude Code event (no restart needed). The spinner verbs take effect immediately.
+After editing, read `~/.claude/settings.json` again to verify that `spinnerVerbs.verbs` now contains the correct race's verbs. If the verbs still show the old race, the edit failed — retry the Edit.
+
+Then tell the user their race and spinner verbs have been updated. The new sounds take effect on the next Claude Code event (no restart needed). The spinner verbs take effect immediately.
