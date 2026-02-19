@@ -7,7 +7,7 @@ description: Use when the user says "change race", "switch to protoss/zerg/terra
 
 When the user invokes this skill, present a race selection using AskUserQuestion:
 
-- **Terran** — SCV and command center sounds (default)
+- **Terran** — Marine and command center sounds (default)
 - **Protoss** — Probe and nexus sounds
 - **Zerg** — Drone and hatchery sounds
 
