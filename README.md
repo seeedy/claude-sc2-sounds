@@ -1,6 +1,6 @@
 # SC2 Sounds for Claude Code
 
-StarCraft II sound effects that play on Claude Code events. Hear Terran or Protoss voice lines when your session starts, a permission prompt appears, or a task completes.
+StarCraft II sound effects that play on Claude Code events. Hear Terran, Protoss, or Zerg voice lines when your session starts, a permission prompt appears, or a task completes.
 
 ## Install
 
@@ -12,9 +12,9 @@ claude plugin add seeedy/claude-sc2-sounds
 
 | Event | Hook | Example sounds |
 |-------|------|---------------|
-| Session start | `SessionStart` | "Battlecruiser operational", "Good day, commander" |
-| Permission prompt | `PermissionRequest` | "Anytime you're ready", "I'm waiting on you" |
-| Task complete | `Stop` | "Research complete", "Upgrade complete" |
+| Session start | `SessionStart` | Marine ready lines, Zealot warp-in, Zergling screeches |
+| Permission prompt | `PermissionRequest` | Medivac callouts, Probe chirps, Drone sounds |
+| Task complete | `Stop` | "Research complete", "Upgrade complete", "Additional pylons" |
 
 ## Change race
 
