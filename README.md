@@ -27,6 +27,8 @@ Use the slash command inside Claude Code:
 
 Pick Terran, Protoss, or Zerg. Your choice is saved to `~/.claude/sc2-race` and takes effect immediately.
 
+Switching race also updates your Claude Code **spinner verbs** to match the selected race (e.g. "Stimming marines" for Terran, "Constructing additional pylons" for Protoss, "Spawning more overlords" for Zerg).
+
 The default race is **Terran**.
 
 ## Add your own sounds
