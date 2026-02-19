@@ -11,7 +11,7 @@
     {
       "name": "sc2-sounds",
       "description": "SC2 sound effects that play on Claude Code events. Supports Terran, Protoss, and Zerg race themes.",
-      "source": "./.claude-plugin",
+      "source": "./sc2-sounds",
       "strict": false,
       "skills": ["./skills/race"]
     }

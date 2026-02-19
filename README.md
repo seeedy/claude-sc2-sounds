@@ -5,7 +5,8 @@ StarCraft II sound effects that play on Claude Code events. Hear Terran, Protoss
 ## Install
 
 ```bash
-claude plugin add seeedy/claude-sc2-sounds
+claude plugin marketplace add seeedy/claude-sc2-sounds
+claude plugin install sc2-sounds
 ```
 
 ## Events
