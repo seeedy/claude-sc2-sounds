@@ -38,6 +38,16 @@ fi
 
 # Pick a random file and play it in the background
 PICK="${FILES[$((RANDOM % ${#FILES[@]}))]}"
-afplay "$PICK" &
+
+if command -v afplay &>/dev/null; then
+  afplay "$PICK" &
+elif command -v paplay &>/dev/null; then
+  paplay "$PICK" &
+elif command -v aplay &>/dev/null; then
+  aplay "$PICK" &
+else
+  echo "sc2-sounds: no audio player found (need afplay, paplay, or aplay)" >&2
+  exit 0
+fi
 
 exit 0

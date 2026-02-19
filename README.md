@@ -44,7 +44,7 @@ A random file from the matching directory plays each time.
 
 ## Requirements
 
-- macOS (uses `afplay` for audio playback)
+- macOS (`afplay`) or Linux (`paplay` / `aplay`)
 - Claude Code with plugin support
 
 ## License
