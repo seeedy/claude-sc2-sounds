@@ -43,6 +43,20 @@ When you pick a race, the plugin replaces Claude Code's default spinner verbs (t
 
 The verbs are written to `spinnerVerbs` in `~/.claude/settings.json` and take effect immediately — no restart needed.
 
+## Adjust volume
+
+Use the slash command inside Claude Code:
+
+```
+/sc2-sounds:volume
+```
+
+Pick from Low (25%), Medium (50%), High (75%), or Max (100%). Your choice is saved to `~/.claude/sc2-volume` and takes effect on the next sound event.
+
+The default volume is **Max** (100%).
+
+> **Note:** On Linux with ALSA (`aplay`), volume control is not available — sounds play at system volume regardless of this setting.
+
 ## Add your own sounds
 
 Drop `.mp3` files into the appropriate directory:

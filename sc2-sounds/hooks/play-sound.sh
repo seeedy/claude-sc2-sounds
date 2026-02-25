@@ -39,10 +39,20 @@ fi
 # Pick a random file and play it in the background
 PICK="${FILES[$((RANDOM % ${#FILES[@]}))]}"
 
+# Read volume preference (default: 100)
+VOLUME_FILE="$HOME/.claude/sc2-volume"
+if [[ -f "$VOLUME_FILE" ]]; then
+  VOLUME=$(cat "$VOLUME_FILE")
+else
+  VOLUME=100
+fi
+
 if command -v afplay &>/dev/null; then
-  afplay "$PICK" &
+  AFPLAY_VOL=$(awk "BEGIN {printf \"%.2f\", $VOLUME / 100}")
+  afplay -v "$AFPLAY_VOL" "$PICK" &
 elif command -v paplay &>/dev/null; then
-  paplay "$PICK" &
+  PAPLAY_VOL=$(( VOLUME * 655 ))
+  paplay --volume="$PAPLAY_VOL" "$PICK" &
 elif command -v aplay &>/dev/null; then
   aplay "$PICK" &
 else
